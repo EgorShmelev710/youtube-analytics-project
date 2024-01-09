@@ -40,4 +40,4 @@ class Channel:
             'view_count': self.view_count
         }
         with open(file_name, 'w', encoding='utf-8') as file:
-            json.dump(result, file)
+            json.dump(result, file, indent=2, ensure_ascii=False)
